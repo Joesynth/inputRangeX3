@@ -1,0 +1,84 @@
+<html>
+  <head>
+    
+    <style>
+ 
+body {
+background: lightsalmon;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=range] {
+    position:relative;
+    top: 100px;
+    width: 22em;
+    height: 11em;
+    //border: 0
+
+    -webkit-transform: rotate(270deg);
+       -moz-transform: rotate(270deg);
+            transform: rotate(270deg);
+}
+
+
+/*
+input[type=range]{
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+    width: 10px;
+    height: 200px;
+    padding: 0 5px;
+}
+     
+*/
+      
+    </style>
+    
+    
+    <script>
+
+
+/*
+  
+function myFunction() {
+      let x = document.getElementById("num1").value;
+      document.getElementById("dis1").value = x;
+      
+let y = document.getElementById("num2").value;
+      document.getElementById("dis2").value = y;
+
+let z = document.getElementById("num2").value;
+      document.getElementById("dis2").value = z;
+      
+
+    }
+
+*/
+
+    </script>
+  </head>
+  <body onload="myFunction()">
+
+<div class="container">
+	<div>
+	<input type="text" id="dis1" maxlength="5" size="5" readonly ;><br>
+	<input name="valuey" id="num1" type="range" value="5" step="1" min="1" max="24" oninput="dis1.value=this.value" />
+	</div>
+
+	<div>
+	<input type="text" id="dis2" maxlength="5" size="5" readonly ;><br>
+	<input name="valuey" id="num2" type="range" value="5" step="20" min="0" max="100" oninput="dis2.value=this.value" />
+	</div>
+
+	<div>
+	<input type="text" id="dis3" maxlength="5" size="5" readonly ;><br>
+	<input name="valuey" id="num3" type="range" value="1" step="1" min="1" max="2" oninput="dis3.value=this.value" />
+	</div>
+</div>
+
+  </body>
+</html>
